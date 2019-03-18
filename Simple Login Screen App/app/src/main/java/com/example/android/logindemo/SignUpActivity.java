@@ -11,14 +11,16 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-    }
-/*
-    EditText idText=(EditText) findViewById(R.id.idText);
-    EditText passwordText=(EditText) findViewById(R.id.passwordText);
-    EditText nameText=(EditText) findViewById(R.id.nameText);
-    EditText emailText=(EditText) findViewById(R.id.emailText);
-    EditText phoneText=(EditText) findViewById(R.id.phoneText);
 
-    Button signupButton=(Button) findViewById(R.id.signupButton);
-  */
+        EditText idText=(EditText) findViewById(R.id.idText);
+        EditText passwordText=(EditText) findViewById(R.id.passwordText);
+        EditText nameText=(EditText) findViewById(R.id.nameText);
+        EditText emailText=(EditText) findViewById(R.id.emailText);
+        EditText phoneText=(EditText) findViewById(R.id.phoneText);
+
+        Button signupButton=(Button) findViewById(R.id.signupButton);
+
+    }
+
+
 }
