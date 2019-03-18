@@ -15,6 +15,7 @@ public class LoginActivity extends AppCompatActivity {
     private TextView Info;
     private Button Login;
     private Button Signup;
+    private TextView ErrorMsg;
     private int counter = 5;
 
     @Override
@@ -27,6 +28,8 @@ public class LoginActivity extends AppCompatActivity {
         Info = (TextView)findViewById(R.id.tvInfo);
         Login = (Button)findViewById(R.id.btnLogin);
         Signup=(Button)findViewById(R.id.btnSignup);
+        ErrorMsg=(TextView)findViewById(R.id.loginErrorMsg);
+
    //     Info.setText("No of attempts remaining: 10");
 
         Login.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
         }else{
+            ErrorMsg.setVisibility(View.VISIBLE);
             /*
             counter--;
 
