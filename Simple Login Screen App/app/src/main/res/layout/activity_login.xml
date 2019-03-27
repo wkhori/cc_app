@@ -35,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/onepa" />
+        app:srcCompat="@drawable/one_pa" />
 
     <Button
         android:id="@+id/btnLogin"

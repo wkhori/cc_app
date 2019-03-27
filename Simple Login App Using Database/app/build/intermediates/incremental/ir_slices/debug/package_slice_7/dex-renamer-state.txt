@@ -1,0 +1,4 @@
+#Mon Mar 18 21:34:26 SGT 2019
+base.0=C\:\\Users\\rnldu\\se_project\\cc_app\\Simple Login App Using Database\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+path.0=classes.dex
+renamed.0=classes.dex
