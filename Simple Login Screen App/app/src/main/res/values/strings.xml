@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">cc_booking_app</string>
+
     <string name="title_activity_execute_login">ExecuteLogin</string>
+
 </resources>
