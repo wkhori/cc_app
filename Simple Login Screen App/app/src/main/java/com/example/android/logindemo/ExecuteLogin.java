@@ -38,7 +38,7 @@ public class ExecuteLogin extends AppCompatActivity {
 //                ErrorMsg.setVisibility(View.INVISIBLE);
 //            }
 //        });
-//
+
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,8 +60,10 @@ public class ExecuteLogin extends AppCompatActivity {
                 || ((userName.equals("nick")) && (userPassword.equals("3333")))
         ) {
 //            ErrorMsg.setVisibility(View.INVISIBLE);
-            Intent intent = new Intent(ExecuteLogin.this, MainActivity.class);
+
+            Intent intent = new Intent(ExecuteLogin.this, SearchFragment.class);
             startActivity(intent);
+
         } else {
 //            ErrorMsg.setVisibility(View.VISIBLE);
         /*
