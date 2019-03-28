@@ -1,6 +1,7 @@
 package com.example.android.logindemo;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,12 +11,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Arrays;
+
 
 public class ExecuteLogin extends AppCompatActivity {
     private EditText Name;
     private EditText Password;
     private Button Login;
     private TextView ErrorMsg;
+
+    //user name and password info//
+    public String[] Id_list=new String[] {
+            "sehyun","walid","lucheng","cx","nick"
+    };
+    public String[] Password_list=new String[]{
+            "1816","0000","1111","2222","3333"
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +38,6 @@ public class ExecuteLogin extends AppCompatActivity {
         Login = (Button)findViewById(R.id.btnLogin);
         ErrorMsg=(TextView)findViewById(R.id.loginErrorMsg);
 
-
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,16 +46,13 @@ public class ExecuteLogin extends AppCompatActivity {
         });
     }
 
-
-
+    public void add_info(String id,String pwd){
+         Arrays.asList(Id_list).add(id);
+         Arrays.asList(Password_list).add(pwd);
+    }
     private void validate(String userName, String userPassword) {
 
-        if (((userName.equals("sehyun")) && (userPassword.equals("1816")))
-                || ((userName.equals("walid")) && (userPassword.equals("0000")))
-                || ((userName.equals("lucheng")) && (userPassword.equals("1111")))
-                || ((userName.equals("cx")) && (userPassword.equals("2222")))
-                || ((userName.equals("nick")) && (userPassword.equals("3333")))) {
-
+        if(Arrays.asList(Id_list).contains(userName) && Arrays.asList(Password_list).contains(userPassword)){
             ErrorMsg.setVisibility(View.INVISIBLE);
             Intent intent = new Intent(ExecuteLogin.this, MainActivity.class);
             startActivity(intent);
