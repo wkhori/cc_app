@@ -16,7 +16,7 @@ public class ExecuteLogin extends AppCompatActivity {
     private EditText Password;
     private Button Login;
 //    private Button Register;
-//    private TextView ErrorMsg;
+    private TextView ErrorMsg;
 //    private TextView Info;
 //    private int counter = 5;
 
@@ -29,7 +29,7 @@ public class ExecuteLogin extends AppCompatActivity {
         Password = (EditText)findViewById(R.id.password);
         Login = (Button)findViewById(R.id.btnLogin);
         //Info = (TextView)findViewById(R.id.tvInfo);
-        // ErrorMsg=(TextView)findViewById(R.id.loginErrorMsg);
+        ErrorMsg=(TextView)findViewById(R.id.loginErrorMsg);
 
         //     Info.setText("No of attempts remaining: 10");
 //        Name.setOnClickListener(new View.OnClickListener() {
@@ -42,9 +42,7 @@ public class ExecuteLogin extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //validate(Name.getText().toString(), Password.getText().toString());
-                Intent LogInIntent = new Intent(ExecuteLogin.this, MainActivity.class);
-                ExecuteLogin.this.startActivity(LogInIntent);
+                validate(Name.getText().toString(), Password.getText().toString());
             }
         });
     }
@@ -59,13 +57,15 @@ public class ExecuteLogin extends AppCompatActivity {
                 || ((userName.equals("cx")) && (userPassword.equals("2222")))
                 || ((userName.equals("nick")) && (userPassword.equals("3333")))
         ) {
-//            ErrorMsg.setVisibility(View.INVISIBLE);
+//
 
-            Intent intent = new Intent(ExecuteLogin.this, SearchFragment.class);
+            ErrorMsg.setVisibility(View.INVISIBLE);
+
+            Intent intent = new Intent(ExecuteLogin.this, MainActivity.class);
             startActivity(intent);
 
         } else {
-//            ErrorMsg.setVisibility(View.VISIBLE);
+            ErrorMsg.setVisibility(View.VISIBLE);
         /*
         counter--;
 
