@@ -1,5 +1,6 @@
 package com.example.android.logindemo;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -38,10 +39,16 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.nav_me:
                             selectedFragment = new MeFragment();
                             break;
+                        case R.id.nav_help :
+                            selectedFragment = new HelpFragment();
+                            break;
                     }
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                            selectedFragment).commit();
-                    return true;
+
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                                selectedFragment).commit();
+                        return true;
+
+
                 }
             };
 }

@@ -17,39 +17,23 @@ public class LoginActivity extends AppCompatActivity {
     private TextView Info;
     private Button Login;
     private Button Register;
-    private TextView ErrorMsg;
-    private int counter = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-//        Name = (EditText)findViewById(R.id.etName);
-//        Password = (EditText)findViewById(R.id.etPassword);
-        //Info = (TextView)findViewById(R.id.tvInfo);
         Login = (Button)findViewById(R.id.btnLogin);
         Register =(Button)findViewById(R.id.btnRegister);
-       // ErrorMsg=(TextView)findViewById(R.id.loginErrorMsg);
-
-   //     Info.setText("No of attempts remaining: 10");
-//        Name.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                ErrorMsg.setVisibility(View.INVISIBLE);
-//            }
-//        });
-
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //validate(Name.getText().toString(), Password.getText().toString());
                 Intent LogInIntent = new Intent(LoginActivity.this, ExecuteLogin.class);
                 LoginActivity.this.startActivity(LogInIntent);
             }
         });
-//
+
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,30 +48,4 @@ public class LoginActivity extends AppCompatActivity {
 //        webview.getSettings().setJavaScriptEnabled(true);
 //        webview.loadData(html, "text/html", null);
     }
-
-//    private void validate(String userName, String userPassword){
-//
-//        if(((userName.equals("sehyun")) && (userPassword.equals("1816")))
-//                || ((userName.equals("walid")) && (userPassword.equals("0000")))
-//                || ((userName.equals("lucheng")) && (userPassword.equals("1111")))
-//                || ((userName.equals("cx")) && (userPassword.equals("2222")))
-//                || ((userName.equals("nick")) && (userPassword.equals("3333")))
-//          ){
-//            ErrorMsg.setVisibility(View.INVISIBLE);
-//            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-//            startActivity(intent);
-//        }else{
-//            ErrorMsg.setVisibility(View.VISIBLE);
-//            /*
-//            counter--;
-//
-//            Info.setText("No of attempts remaining: " + String.valueOf(counter));
-//
-//            if(counter == 0){
-//                Login.setEnabled(false);
-//            }
-//            */
-//        }
-//    }
-
 }
