@@ -88,8 +88,9 @@ public class ExecuteLogin extends AppCompatActivity {
     private void validate(String userName, String userPassword) {
 
 //        if(Arrays.asList(Id_list).contains(userName) && Arrays.asList(Password_list).contains(userPassword)){
+        int idx= id_list.indexOf(userName);
 
-        if(id_list.contains(userName) && pwd_list.contains(userPassword)){
+        if(id_list.contains(userName) && pwd_list.get(idx).equals(userPassword)){
             // ErrorMsg.setVisibility(View.INVISIBLE);
             Intent intent = new Intent(ExecuteLogin.this, MainActivity.class);
             startActivity(intent);
