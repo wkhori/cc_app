@@ -22,6 +22,7 @@ public class ExecuteLogin extends AppCompatActivity {
     private EditText Password;
     private Button Login;
     private Button Cancel;
+    private TextView Signup;
     //private TextView ErrorMsg;
 
     //user name and password info//
@@ -55,6 +56,7 @@ public class ExecuteLogin extends AppCompatActivity {
         Password = (EditText)findViewById(R.id.password);
         Login = (Button)findViewById(R.id.btnLogin);
         Cancel=(Button)findViewById(R.id.btnBack);
+        Signup=(TextView)findViewById(R.id.move);
 
         //ErrorMsg=(TextView)findViewById(R.id.loginErrorMsg);
 
@@ -71,6 +73,13 @@ public class ExecuteLogin extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Signup.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ExecuteLogin.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        }));
     }
 
     private void validate(String userName, String userPassword) {
