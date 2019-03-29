@@ -2,6 +2,7 @@ package com.example.android.logindemo;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -51,8 +52,10 @@ public class SignUpActivity extends AppCompatActivity {
             else {
 */
 
-                Intent LogInIntent = new Intent(SignUpActivity.this, ExecuteLogin.class);
-                SignUpActivity.this.startActivity(LogInIntent);
+                Intent signupIntent = new Intent(SignUpActivity.this, ExecuteLogin.class);
+                signupIntent.putExtra("this_is_id",id);
+                signupIntent.putExtra("this_is_pwd",password);
+                startActivity(signupIntent);
   //          }
         }
     }
