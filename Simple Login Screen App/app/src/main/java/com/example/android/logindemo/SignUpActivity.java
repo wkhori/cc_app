@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.Arrays;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -32,42 +31,36 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 validate(idText.getText().toString(),passwordText.getText().toString(),nameText.getText().toString(),emailText.getText().toString(),phoneText.getText().toString());
-//                Intent LogInIntent = new Intent(SignUpActivity.this, ExecuteLogin.class);
-//                SignUpActivity.this.startActivity(LogInIntent);
             }
         });
 
     }
 
     private void validate(final String id,final String password,String name,String email,String phone){
-        //determine whether it is null-string or not
+        //Exception1. determine whether it is null-string or not
         if(id.getBytes().length<=0 || password.getBytes().length<=0 || name.getBytes().length<=0 || email.getBytes().length<=0 || phone.getBytes().length<=0){
             Toast.makeText(SignUpActivity.this, "Fill out all the blanks.", Toast.LENGTH_SHORT).show();
         }
         else{
-            //determine wheter account already exists
-/*
-            if(Arrays.asList(Id_list).contains(id)){
-                Toast.makeText(SignUpActivity.this, "This account already exists.", Toast.LENGTH_SHORT).show();
-            }
-            else {
-*/
 
-                AlertDialog.Builder success = new AlertDialog.Builder(SignUpActivity.this,R.style.MyAlertDialogStyle);
-                success.setTitle("Successfully signed up");
-                success.setMessage("Login with your new account.")
-                        .setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                Intent signupIntent = new Intent(SignUpActivity.this, ExecuteLogin.class);
-                                signupIntent.putExtra("this_is_id",id);
-                                signupIntent.putExtra("this_is_pwd",password);
-                                startActivity(signupIntent);
-                            }
-                        });
-                success.show();
+                //Exception2. already existing account should be banned!
 
-  //          }
+                //Successfully signed up
+
+                    AlertDialog.Builder success = new AlertDialog.Builder(SignUpActivity.this,R.style.MyAlertDialogStyle);
+                    success.setTitle("Successfully signed up");
+                    success.setMessage("Login with your new account.")
+                            .setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    Intent signupIntent = new Intent(SignUpActivity.this, ExecuteLogin.class);
+                                    signupIntent.putExtra("this_is_id",id);
+                                    signupIntent.putExtra("this_is_pwd",password);
+                                    startActivity(signupIntent);
+                                }
+                            });
+                    success.show();
+
         }
     }
 

@@ -26,8 +26,9 @@ public class ExecuteLogin extends AppCompatActivity {
     //private TextView ErrorMsg;
 
     //user name and password info//
-    private List<String> id_list=new ArrayList<String>();
-    private List<String> pwd_list=new ArrayList<String>();
+    public List<String> id_list=new ArrayList<String>();
+    public List<String> pwd_list=new ArrayList<String>();
+    public static Context context;
 
 /*
     public String[] Id_list=new String[] {
@@ -43,7 +44,9 @@ public class ExecuteLogin extends AppCompatActivity {
         setContentView(R.layout.activity_execute_login);
 
         id_list.add("sehyun");id_list.add("walid");id_list.add("lucheng");id_list.add("cx");id_list.add("nick");
-        pwd_list.add("1816");id_list.add("0000");id_list.add("1111");id_list.add("2222");id_list.add("3333");
+        pwd_list.add("1816");pwd_list.add("0000");pwd_list.add("1111");pwd_list.add("2222");pwd_list.add("3333");
+
+        context=this;
 
         Intent getInfo=getIntent();
         String get_id=getInfo.getStringExtra("this_is_id");
