@@ -90,14 +90,17 @@ public class ExecuteLogin extends AppCompatActivity {
 //        if(Arrays.asList(Id_list).contains(userName) && Arrays.asList(Password_list).contains(userPassword)){
         int idx= id_list.indexOf(userName);
 
-        if(id_list.contains(userName) && pwd_list.get(idx).equals(userPassword)){
-            // ErrorMsg.setVisibility(View.INVISIBLE);
-            Intent intent = new Intent(ExecuteLogin.this, MainActivity.class);
-            startActivity(intent);
-
+        if(id_list.contains(userName)){
+            if(pwd_list.get(idx).equals(userPassword)){
+                Intent intent = new Intent(ExecuteLogin.this, MainActivity.class);
+                startActivity(intent);
+            }
+            else{
+                Toast.makeText(ExecuteLogin.this, "Invalid Password", Toast.LENGTH_SHORT).show();
+            }
         } else {
             //ErrorMsg.setVisibility(View.VISIBLE);
-            Toast.makeText(ExecuteLogin.this, "Invalid : try again!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ExecuteLogin.this, "Invalid ID", Toast.LENGTH_SHORT).show();
         }
     }
 

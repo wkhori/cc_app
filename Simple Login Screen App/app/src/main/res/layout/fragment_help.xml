@@ -3,75 +3,154 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/holo_green_light">
+    android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFCDD2"
-        android:orientation="vertical"
-        android:padding="16dp">
+
+    <TextView
+        android:id="@+id/just_4_background"
+        android:layout_width="364dp"
+        android:layout_height="470dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_form_title"
+        app:layout_constraintVertical_bias="0.122" />
 
         <TextView
             android:id="@+id/contact_form_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:text="Contact Us"
-            android:textColor="#ce3232"
-            android:textSize="40sp"
-            android:typeface="serif" />
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:drawableLeft="@drawable/ic_face_black_24dp"
+        android:drawableTint="#939393"
+        android:drawablePadding="10dp"
+        android:textColorHint="@color/my_dark_gray"
+        android:theme="@style/EditTheme"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_form_title" />
 
         <EditText
-            android:layout_width="fill_parent"
+            android:id="@+id/email"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:hint="Name"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:theme="@style/EditTheme"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawableTint="#939393"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/my_dark_gray"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
 
         <EditText
-            android:layout_width="fill_parent"
+            android:id="@+id/phone"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:theme="@style/EditTheme"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawableTint="#939393"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/my_dark_gray"
             android:hint="Phone"
-            android:inputType="phone" />
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
 
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:gravity="top"
-            android:hint="Your Message"
-            android:fitsSystemWindows="true"
-            android:breakStrategy="balanced"
-            android:inputType="textMultiLine"
-            android:singleLine="false"
-            android:padding="5dp" />
+    <EditText
+        android:id="@+id/your_msg"
+        android:layout_width="300dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:breakStrategy="balanced"
+        android:drawableLeft="@drawable/ic_edit_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableTint="#939393"
+        android:textColorHint="@color/my_dark_gray"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical"
+        android:hint="Your Message"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:theme="@style/EditTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@color/colorPrimaryDark"
-            android:elevation="4dp"
-            android:paddingLeft="70dp"
-            android:paddingRight="70dp"
-            android:text="Submit"
-            android:textColor="#fff" />
-    </LinearLayout>
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button"
+        android:elevation="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="send"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/your_msg"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
 
 </android.support.constraint.ConstraintLayout>

@@ -12,6 +12,11 @@
 
     </style>
 
+    <style name="EditTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/normal</item>
+        <item name="colorControlNormal">@color/my_dark_gray</item>
+    </style>
+
     <style name="MyAlertDialogStyle" parent="@style/Theme.AppCompat.Dialog.Alert">
         <item name="android:textColor">#aaaaaa</item>
         <item name="android:typeface">monospace</item>
