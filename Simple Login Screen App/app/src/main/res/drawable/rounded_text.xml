@@ -4,7 +4,7 @@
 
     >
     <!-- you can use any color you want I used here gray color-->
-    <solid android:color="#e8e8e8" />
+    <solid android:color="@color/my_very_light_gray" />
     <corners android:radius="15dp" />
 
 </shape>

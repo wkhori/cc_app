@@ -6,4 +6,5 @@
     <color name="normal">#ffa554</color>
     <color name="my_light_gray">#aaaaaa</color>
     <color name="my_dark_gray">#939393</color>
+    <color name="my_very_light_gray">#dddddd</color>
 </resources>

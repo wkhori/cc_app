@@ -61,13 +61,14 @@
         android:layout_width="match_parent"
         android:layout_height="69dp"
         android:layout_alignParentBottom="true"
-        android:background="?android:attr/windowBackground"
+        android:background="@color/my_very_light_gray"
         android:visibility="visible"
-        app:itemTextColor="@color/common_google_signin_btn_text_light_pressed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:itemIconTint="@drawable/bottom_nav_icon_color"
+        app:itemTextColor="@drawable/bottom_nav_icon_color"
         app:menu="@menu/bottom_navigation" />
 
 </android.support.constraint.ConstraintLayout>

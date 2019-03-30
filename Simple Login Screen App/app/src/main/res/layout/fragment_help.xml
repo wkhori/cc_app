@@ -23,23 +23,23 @@
         app:layout_constraintTop_toBottomOf="@+id/contact_form_title"
         app:layout_constraintVertical_bias="0.122" />
 
-        <TextView
-            android:id="@+id/contact_form_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:text="Contact Us"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:typeface="serif"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Contact Us"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/name"
@@ -104,35 +104,36 @@
     <EditText
         android:id="@+id/your_msg"
         android:layout_width="300dp"
-        android:layout_height="151dp"
+        android:layout_height="186dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@drawable/stroke_box2"
         android:breakStrategy="balanced"
         android:drawableLeft="@drawable/ic_edit_black_24dp"
         android:drawablePadding="10dp"
         android:drawableTint="#939393"
-        android:textColorHint="@color/my_dark_gray"
         android:fitsSystemWindows="true"
         android:gravity="center_vertical"
         android:hint="Your Message"
         android:inputType="textMultiLine"
         android:padding="5dp"
         android:singleLine="false"
+        android:textColorHint="@color/my_dark_gray"
         android:theme="@style/EditTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phone" />
 
     <Button
-        android:layout_width="260dp"
+        android:layout_width="247dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
@@ -148,7 +149,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/your_msg"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.03" />
 
 
 
