@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ConfirmPayment"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Badminton" />
+        <activity android:name=".SportAndFitness" />
+        <activity android:name=".sportNfitness" />
         <activity android:name=".SearchItem" />
         <activity android:name=".ExecuteLogin" />
         <activity android:name=".SignUpActivity" />

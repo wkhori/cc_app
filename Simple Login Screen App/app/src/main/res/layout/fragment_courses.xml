@@ -4,17 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   >
+    android:background="#ffffff" >
+
+    <Button
+        android:id="@+id/sports"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:text="sports_fitness"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Courses" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="262dp"
-        android:text="Courses Fragment"
-        android:textSize="30sp"
+        android:id="@+id/Courses"
+        android:layout_width="132dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="courses"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cook"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:text="cooking_food_culture"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/music" />
+
+    <Button
+        android:id="@+id/beauty"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:text="beauty_wellness"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arts" />
+
+    <Button
+        android:id="@+id/arts"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:text="arts_crafts_hobbies"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cook" />
+
+    <Button
+        android:id="@+id/music"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:text="music_drama_dance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sports" />
 
 </android.support.constraint.ConstraintLayout>
