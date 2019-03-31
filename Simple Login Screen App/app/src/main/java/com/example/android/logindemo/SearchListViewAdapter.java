@@ -103,25 +103,6 @@ public class SearchListViewAdapter extends BaseAdapter {
                     bundle.putString("subTitle4Content2TV", "Payment Hours: 9:00 AM - 9:30 PM");
                     fragment.setArguments(bundle);
 
-
-//                    Intent intent = new Intent(mContext, SearchItem.class);
-
-//                    bundle.putString("clubNameTV", "Bishan CC");
-//                    bundle.putString("mainTitleTV", "Information");
-//                    bundle.putString("subTitle1TV", "Location:");
-//                    bundle.putString("subTitle1ContentTV", "51 BISHAN STREET 13 579799");
-//                    bundle.putString("subTitle2TV", "How to get here:");
-//                    bundle.putString("subTitle2ContentTV", "Facing Bishan Bus Interchange. Buses No 52, 53, 54, 55, 56, 57, 58, 59, 410. Near Junction 8");
-//                    bundle.putString("subTitle3TV", "Contact:");
-//                    bundle.putString("subTitle3Content1TV", "6259 4720");
-//                    bundle.putString("subTitle3Content2TV", "6353 1912");
-//                    bundle.putString("subTitle3Content3TV", "N.A");
-//                    bundle.putString("subTitle4TV", "Office hours:");
-//                    bundle.putString("subTitle4Content1TV", "Operating Hours: N.A");
-//                    bundle.putString("subTitle4Content2TV", "Payment Hours: 9:00 AM - 9:30 PM");
-//
-//                    mContext.startActivity(intent);
-
                 }
 
                 else if (modelList.get(position).getClubName().equals("Bishan North CC")){

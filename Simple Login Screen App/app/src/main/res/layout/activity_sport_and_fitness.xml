@@ -7,125 +7,111 @@
     android:layout_height="match_parent"
     tools:context=".SportAndFitness">
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/sports"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".sportNfitness"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
-
-        <Button
-            android:id="@+id/sport0"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:layout_width="384dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="16dp"
-            android:background="@android:color/holo_orange_light"
-            android:text="badminton"
-            android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/Sport3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/Sport6"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="382dp"
-            android:layout_height="77dp"
-            android:layout_marginTop="8dp"
-            android:background="@android:color/holo_orange_light"
-            android:text="bowling"
-            android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Sport5" />
-
-        <Button
-            android:id="@+id/Sport5"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="382dp"
-            android:layout_height="77dp"
-            android:layout_marginTop="8dp"
-            android:background="@android:color/holo_orange_light"
-            android:text="kayaking"
-            android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Sport4" />
-
-        <Button
-            android:id="@+id/Sport2"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:layout_width="384dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="8dp"
-            android:background="@android:color/holo_orange_light"
-            android:text="yoga"
-            android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sport0" />
-
-        <Button
-            android:id="@+id/Sport3"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:layout_width="384dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="8dp"
-            android:background="@android:color/holo_orange_light"
-            android:text="aerobics"
-            android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Sport2" />
-
-        <Button
-            android:id="@+id/Sport4"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="382dp"
-            android:layout_height="77dp"
-            android:layout_marginTop="8dp"
-            android:background="@android:color/holo_orange_light"
-            android:text="taekwondo"
-            android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/Sport5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Sport3" />
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.v7.widget.ContentFrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_above="@id/bottom_navigation"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/Sport4"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button2"
+        android:text="taekwondo"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Sport5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" >
+        app:layout_constraintTop_toBottomOf="@+id/Sport3" />
 
-
-    </android.support.v7.widget.ContentFrameLayout>
-
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Sport / Fitness"
+        android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sport0"
+        android:layout_width="300dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rounded_button2"
+        android:text="badminton"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Button
+        android:id="@+id/Sport6"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button2"
+        android:text="bowling"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sport5" />
+
+    <Button
+        android:id="@+id/Sport2"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rounded_button2"
+        android:text="yoga"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sport0" />
+
+    <Button
+        android:id="@+id/Sport5"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button2"
+        android:text="kayaking"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sport4" />
+
+    <Button
+        android:id="@+id/Sport3"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button2"
+        android:text="aerobics"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sport2" />
 
 </android.support.constraint.ConstraintLayout>
