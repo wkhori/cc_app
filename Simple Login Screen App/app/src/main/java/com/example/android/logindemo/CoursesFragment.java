@@ -39,8 +39,13 @@ public class CoursesFragment extends Fragment {
         Sports.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent coursesIntent = new Intent( CoursesFragment.this.getContext(), SportAndFitness.class);
-                CoursesFragment.this.startActivity(coursesIntent);
+//                Intent coursesIntent = new Intent( CoursesFragment.this.getContext(), SportAndFitness.class);
+//                CoursesFragment.this.startActivity(coursesIntent);
+                 Fragment fragment=new SportAndFitnessFragment();
+                 FragmentManager fragmentManager=getFragmentManager();
+                 FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+                 fragmentTransaction.replace(R.id.fragment_container,fragment);
+                 fragmentTransaction.commit();
             }
         });
 

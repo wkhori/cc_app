@@ -9,21 +9,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
+/******************************This class is no more used!!!!! (moved to SearchItemFragment because of the navbar error) *********************/
 public class Badminton extends AppCompatActivity {
-    private ViewPager viewPager;
-    private SlideAdapter myadapter;
-    private Button register;
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_badminton);
-        viewPager = (ViewPager) findViewById(R.id.viewpager);
-        myadapter = new SlideAdapter(this);
-        viewPager.setAdapter(myadapter);
-    }
+//    private ViewPager viewPager;
+//    private SlideAdapter myadapter;
+//    private Button register;
+//
+//
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_badminton);
+//        viewPager = (ViewPager) findViewById(R.id.viewpager);
+//        myadapter = new SlideAdapter(this);
+//        viewPager.setAdapter(myadapter);
+//    }
 
 
 }

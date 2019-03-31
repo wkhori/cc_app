@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 public class SearchItem extends AppCompatActivity {
- /******************************This class is no more used!!!!!**********************************************/
+ /******************************This class is no more used!!!!! (moved to SearchItemFragment because of the navbar error) *********************/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 

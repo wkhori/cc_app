@@ -223,6 +223,7 @@ public class SearchListViewAdapter extends BaseAdapter {
 
                 FragmentManager fragmentManager = ((AppCompatActivity)mContext).getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
                 fragmentTransaction.replace(R.id.fragment_container, fragment);
                 fragmentTransaction.commit();
             }
@@ -247,5 +248,6 @@ public class SearchListViewAdapter extends BaseAdapter {
         }
         notifyDataSetChanged();
     }
+
 
 }
