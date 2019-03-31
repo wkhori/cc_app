@@ -11,25 +11,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 public class CoursesFragment extends Fragment {
-    private Button test;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_courses,container,false);
-        test = (Button) v.findViewById(R.id.frag_test);
 
-        test.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Fragment fragment = new testFragment();
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace( R.id.fragment_container, fragment );
-                fragmentTransaction.commit();
-            }
-        });
 
         return v;
     }
