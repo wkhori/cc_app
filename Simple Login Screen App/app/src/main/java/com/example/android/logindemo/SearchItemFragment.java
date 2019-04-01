@@ -20,7 +20,6 @@ public class SearchItemFragment extends Fragment {
 
         //assign TextView
         TextView clubNameTV = v.findViewById(R.id.clubName);
-        TextView mainTitleTV = v.findViewById(R.id.information);
         TextView subTitle1TV = v.findViewById(R.id.location);
         TextView subTitle2TV = v.findViewById(R.id.howToGetHere);
         TextView subTitle3TV = v.findViewById(R.id.contact);
@@ -58,7 +57,6 @@ public class SearchItemFragment extends Fragment {
 
             //set text in textview, titles
             clubNameTV.setText(clubName);
-            mainTitleTV.setText(mainTitle);
             subTitle1TV.setText(subTitle1);
             subTitle2TV.setText(subTitle2);
             subTitle3TV.setText(subTitle3);

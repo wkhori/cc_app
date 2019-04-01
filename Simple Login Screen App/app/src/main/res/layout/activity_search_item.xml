@@ -6,163 +6,190 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.logindemo.SearchItem">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="628dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="23dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <TextView
+        android:id="@+id/clubName"
+        android:layout_width="440dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/normal"
+        android:paddingTop="10dp"
+        android:text="Example CC Name"
+        android:textAlignment="center"
+        android:textColor="#584B4B"
+        android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:id="@+id/clubName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Example CC Name"
-            android:textColor="#000000"
-            android:textSize="35sp" />
-
-        <TextView
-            android:id="@+id/information"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:text="Information"
-            android:textColor="#000000"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Location"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_text2"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="#2E2E2E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clubName" />
 
-            <TextView
-                android:id="@+id/location"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Location"
-                android:textColor="#000000"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/locationContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="51 BISHAN STREET 13 579799"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
 
-            <TextView
-                android:id="@+id/locationContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="5dp"
-                android:text="51 BISHAN STREET 13 579799"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+    <TextView
+        android:id="@+id/howToGetHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="How To Get Here"
+        android:background="@drawable/rounded_text2"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="#2E2E2E"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationContent" />
 
-            <TextView
-                android:id="@+id/howToGetHere"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="How To Get Here"
-                android:textColor="#000000"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/howToGetHereContent"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Facing Bishan Bus Interchange. \nBuses No 52, 53, 54, 55, 56, 57, 58, 59, 410. \nNear Junction 8"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howToGetHere" />
 
-            <TextView
-                android:id="@+id/howToGetHereContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="5dp"
-                android:text="Facing Bishan Bus Interchange. Buses No 52, 53, 54, 55, 56, 57, 58, 59, 410. Near Junction 8"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Contact"
+        android:background="@drawable/rounded_text2"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="#2E2E2E"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howToGetHereContent" />
 
-            <TextView
-                android:id="@+id/contact"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Contact"
-                android:textColor="#000000"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/contactPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="8dp"
+        android:text="62594720"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact" />
 
-            <TextView
-                android:id="@+id/contactPhone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="5dp"
-                android:drawableLeft="@drawable/ic_phone"
-                android:drawablePadding="8dp"
-                android:text="62594720"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+    <TextView
+        android:id="@+id/contactFax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:drawableLeft="@drawable/ic_printer"
+        android:drawablePadding="8dp"
+        android:text="63531912"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactPhone" />
 
-            <TextView
-                android:id="@+id/contactFax"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:drawableLeft="@drawable/ic_printer"
-                android:drawablePadding="8dp"
-                android:text="63531912"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+    <TextView
+        android:id="@+id/contactEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:drawableLeft="@drawable/ic_mail"
+        android:drawablePadding="8dp"
+        android:text="N.A"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactFax" />
 
-            <TextView
-                android:id="@+id/contactEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:drawableLeft="@drawable/ic_mail"
-                android:drawablePadding="8dp"
-                android:text="N.A"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+    <TextView
+        android:id="@+id/officeHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Office Hours"
+        android:background="@drawable/rounded_text2"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="#2E2E2E"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactEmail" />
 
-            <TextView
-                android:id="@+id/officeHours"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Office Hours"
-                android:textColor="#000000"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/operatingHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Operating Hours: N.A"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/officeHours" />
 
-            <TextView
-                android:id="@+id/operatingHours"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="5dp"
-                android:text="Operating Hours: N.A"
-                android:textColor="#000000"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/paymentHours"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:text="Payment Hours: 9:00 AM - 9:30 PM"
-                android:textColor="#000000"
-                android:textSize="20sp" />
-
-
-
-    </LinearLayout>
-
+    <TextView
+        android:id="@+id/paymentHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Payment Hours: 9:00 AM - 9:30 PM"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operatingHours" />
 
 </android.support.constraint.ConstraintLayout>
