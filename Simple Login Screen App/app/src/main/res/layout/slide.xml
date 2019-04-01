@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/slideimg"
         android:layout_width="match_parent"
-        android:layout_height="517dp" />
+        android:layout_height="510dp" />
 
     <Button
         android:id="@+id/register"
@@ -18,9 +18,10 @@
         android:layout_width="107dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:background="@android:color/holo_orange_light"
+        android:background="@drawable/rounded_button2"
         android:text="register"
-        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        android:textColor="#ffffff" />
 
 
 </LinearLayout>
