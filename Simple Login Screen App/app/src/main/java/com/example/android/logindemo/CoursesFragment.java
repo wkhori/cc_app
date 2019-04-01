@@ -44,7 +44,9 @@ public class CoursesFragment extends Fragment {
                  Fragment fragment=new SportAndFitnessFragment();
                  FragmentManager fragmentManager=getFragmentManager();
                  FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-                 fragmentTransaction.replace(R.id.fragment_container,fragment);
+                 fragmentTransaction
+                         .setCustomAnimations(R.anim.fade_in, R.anim.fade_out, R.anim.fade_in,R.anim.fade_out)
+                         .replace(R.id.fragment_container,fragment);
                  fragmentTransaction.commit();
             }
         });

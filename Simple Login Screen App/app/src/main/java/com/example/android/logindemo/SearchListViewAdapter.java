@@ -121,7 +121,7 @@ public class SearchListViewAdapter extends BaseAdapter {
                     bundle.putString("subTitle4TV", "Office hours:");
                     bundle.putString("subTitle4Content1TV", "Operating Hours: N.A");
                     bundle.putString("subTitle4Content2TV", "Payment Hours: 2:30 PM - 9:30 PM");
-
+                    fragment.setArguments(bundle);
                    // mContext.startActivity(intent);
                 }
                 else if (modelList.get(position).getClubName().equals("Bukit Timah CC")){
@@ -140,7 +140,7 @@ public class SearchListViewAdapter extends BaseAdapter {
                     bundle.putString("subTitle4TV", "Office hours:");
                     bundle.putString("subTitle4Content1TV", "Operating Hours: N.A");
                     bundle.putString("subTitle4Content2TV", "Payment Hours: 9:30 AM - 9:30 PM");
-
+                    fragment.setArguments(bundle);
                   //  mContext.startActivity(intent);
                 }
                 else if (modelList.get(position).getClubName().equals("Nanyang CC")){
@@ -159,7 +159,7 @@ public class SearchListViewAdapter extends BaseAdapter {
                     bundle.putString("subTitle4TV", "Office hours:");
                     bundle.putString("subTitle4Content1TV", "Operating Hours: N.A");
                     bundle.putString("subTitle4Content2TV", "Payment Hours: 9:00 AM - 9:30 PM");
-
+                    fragment.setArguments(bundle);
                  //   mContext.startActivity(intent);
                 }
                 else if (modelList.get(position).getClubName().equals("Nee Soon Central CC")){
@@ -178,7 +178,7 @@ public class SearchListViewAdapter extends BaseAdapter {
                     bundle.putString("subTitle4TV", "Office hours:");
                     bundle.putString("subTitle4Content1TV", "Operating Hours: N.A");
                     bundle.putString("subTitle4Content2TV", "Payment Hours: 2:00 PM - 10:00 PM");
-
+                    fragment.setArguments(bundle);
                     //mContext.startActivity(intent);
                 }
                 else if (modelList.get(position).getClubName().equals("Tampines West CC")){
@@ -197,7 +197,7 @@ public class SearchListViewAdapter extends BaseAdapter {
                     bundle.putString("subTitle4TV", "Office hours:");
                     bundle.putString("subTitle4Content1TV", "Operating Hours: N.A");
                     bundle.putString("subTitle4Content2TV", "Payment Hours: 9:00 AM - 9:30 PM");
-
+                    fragment.setArguments(bundle);
                    // mContext.startActivity(intent);
 
                 }
@@ -205,7 +205,9 @@ public class SearchListViewAdapter extends BaseAdapter {
                 FragmentManager fragmentManager = ((AppCompatActivity)mContext).getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                fragmentTransaction.replace(R.id.fragment_container, fragment);
+                fragmentTransaction
+                        .setCustomAnimations(R.anim.fade_in, R.anim.fade_out, R.anim.fade_in,R.anim.fade_out)
+                        .replace(R.id.fragment_container, fragment);
                 fragmentTransaction.commit();
             }
         });
