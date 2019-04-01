@@ -24,7 +24,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="payment"
+            android:text="Payment "
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -38,8 +38,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="24dp"
-            android:text="contact_detail"
-            android:textAppearance="@android:style/TextAppearance"
+            android:text="Contact Detail"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
             app:layout_constraintBottom_toTopOf="@+id/textView3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -60,7 +60,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="8dp"
-            android:text="email"
+            android:text="Email: feng.chengxuan11@gmail.com"
             app:layout_constraintBottom_toTopOf="@+id/textView5"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -71,31 +71,19 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="24dp"
-            android:text="phone"
+            android:text="Phone: 81681083"
             app:layout_constraintBottom_toTopOf="@+id/textView6"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginBottom="8dp"
-            android:text="fee"
-            android:textAppearance="@android:style/TextAppearance"
-            app:layout_constraintBottom_toTopOf="@+id/textView7"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
-            android:layout_height="22dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="16dp"
-            android:text="pay"
-            android:textAppearance="@android:style/TextAppearance"
+            android:text="Payment Structure"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
             app:layout_constraintBottom_toTopOf="@+id/radioButton"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -106,7 +94,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="8dp"
-            android:text="basic_fee_63"
+            android:text="Basic Fee: $63"
             app:layout_constraintBottom_toTopOf="@+id/textView8"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -117,7 +105,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="8dp"
-            android:text="material_fee_0"
+            android:text="Material Fee: $0"
             app:layout_constraintBottom_toTopOf="@+id/textView9"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -128,7 +116,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="8dp"
-            android:text="discount_0_80"
+            android:text="Discount: $0.80"
             app:layout_constraintBottom_toTopOf="@+id/textView10"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -139,7 +127,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="8dp"
-            android:text="subtotal_62_20"
+            android:text="Subtotal $62.20"
             app:layout_constraintBottom_toTopOf="@+id/textView11"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -150,7 +138,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="8dp"
-            android:text="inclusive_of_gst_7_4_41"
+            android:text="Inclusive of GST 7%: $4.41"
             app:layout_constraintBottom_toTopOf="@+id/textView12"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -161,7 +149,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="16dp"
-            android:text="grand_total_62_20"
+            android:text="Grand Total: $62.20"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault"
             app:layout_constraintBottom_toTopOf="@+id/textView13"
             app:layout_constraintStart_toStartOf="parent" />
@@ -177,7 +165,7 @@
             android:checked="false"
             android:clickable="true"
             android:focusable="true"
-            android:text="visa_transaction"
+            android:text="Visa Transaction"
             app:layout_constraintBottom_toTopOf="@+id/radioButton2"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -192,7 +180,7 @@
             android:checked="false"
             android:clickable="true"
             android:focusable="true"
-            android:text="nets_transaction"
+            android:text="NETS Transaction"
             app:layout_constraintBottom_toTopOf="@+id/confirm"
             app:layout_constraintStart_toStartOf="parent" />
 

@@ -14,7 +14,6 @@
         <activity android:name=".Badminton" />
         <activity android:name=".SportAndFitness" />
         <activity android:name=".sportNfitness" />
-        <activity android:name=".SearchItem" />
         <activity android:name=".ExecuteLogin" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity">

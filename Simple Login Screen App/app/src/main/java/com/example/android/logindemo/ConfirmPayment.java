@@ -20,7 +20,7 @@ public class ConfirmPayment extends AppCompatActivity {
         okButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent signupIntent = new Intent(ConfirmPayment.this, SportAndFitness.class);
+                Intent signupIntent = new Intent(ConfirmPayment.this, MainActivity.class);
                 ConfirmPayment.this.startActivity(signupIntent);
             }
         });
