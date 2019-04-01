@@ -15,13 +15,14 @@
     <Button
         android:id="@+id/register"
         style="@android:style/Widget.DeviceDefault.Button.Inset"
-        android:layout_width="107dp"
+        android:layout_width="126dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
         android:background="@drawable/rounded_button2"
         android:text="register"
         android:textAppearance="@android:style/TextAppearance.Holo.Large"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
