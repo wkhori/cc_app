@@ -12,9 +12,6 @@
         <activity android:name=".ConfirmPayment"></activity>
         <activity android:name=".Register" />
         <activity android:name=".Badminton" />
-        <activity android:name=".SportAndFitness" />
-        <activity android:name=".sportNfitness" />
-        <activity android:name=".SearchItem" />
         <activity android:name=".ExecuteLogin" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity">
@@ -24,7 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan"/>
     </application>
 
 </manifest>
