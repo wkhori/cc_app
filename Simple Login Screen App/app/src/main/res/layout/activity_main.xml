@@ -7,7 +7,7 @@
     tools:context="com.example.android.logindemo.MainActivity">
 
 
-    <EditText
+    <TextView
         android:id="@+id/editText5"
         android:layout_width="357dp"
         android:layout_height="45dp"
@@ -17,34 +17,34 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:ems="10"
         android:gravity="center_horizontal"
         android:inputType="textPersonName"
         android:text="Created by KingCode™ Copyright ©2019"
-        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.791" />
+        app:layout_constraintVertical_bias="0.401" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText2"
         android:layout_width="364dp"
         android:layout_height="150dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:ems="10"
         android:gravity="center_horizontal"
         android:inputType="textMultiLine"
         android:text="Welcome to the Beta Version of Singapore's OnePass Community Centre Registeration Application"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintEnd_toStartOf="@+id/fragment_container"
-        app:layout_constraintStart_toEndOf="@+id/fragment_container"
-        app:layout_constraintTop_toTopOf="@+id/fragment_container"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.ContentFrameLayout
         android:id="@+id/fragment_container"
